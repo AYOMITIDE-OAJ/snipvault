@@ -1,5 +1,5 @@
 resource "aws_eks_cluster" "main" {
-  name     = "mini-pastebin-eks"
+  name     = "snipvault-eks"
   role_arn = var.eks_role_arn   # Use the passed IAM role ARN here
 
   vpc_config {
@@ -14,7 +14,7 @@ resource "aws_eks_cluster" "main" {
 
 resource "aws_eks_node_group" "node_group" {
   cluster_name    = aws_eks_cluster.main.name
-  node_group_name = "mini-pastebin-node-group"
+  node_group_name = "snipvault-node-group"
   node_role_arn   = var.node_role_arn   # Use the passed IAM node role ARN here
   subnet_ids      = flatten(var.private_subnet_ids)
 

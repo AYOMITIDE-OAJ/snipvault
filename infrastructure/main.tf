@@ -42,7 +42,7 @@ module "ecr" {
 # Call the S3 module
 module "s3" {
   source = "./s3"
-  bucket_name = "mini-pastebin-assets"
+  bucket_name = "snipvault-assets"
 }
 
 # Call the IAM module

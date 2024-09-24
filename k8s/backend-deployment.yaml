@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: <your-ecr-repo>/mini-pastebin-backend:latest
+        image: <your-ecr-repo>/snipvault-backend:latest
         ports:
         - containerPort: 9999
         env:

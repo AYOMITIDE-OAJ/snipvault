@@ -1,6 +1,6 @@
-# Mini Pastebin Backend
+# SnipVault Backend
 
-This is the backend for the Mini Pastebin project. It is a Node.js/Express application that provides a RESTful API for managing code snippets. The backend uses PostgreSQL as the database, and Sequelize as the ORM (Object-Relational Mapping) to interact with the database.
+This is the backend for the SnipVault project. It is a Node.js/Express application that provides a RESTful API for managing code snippets. The backend uses PostgreSQL as the database, and Sequelize as the ORM (Object-Relational Mapping) to interact with the database.
 
 ## Features
 
@@ -31,7 +31,7 @@ Make sure you have the following installed on your machine:
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/maitreya2954/mini-pastebin.git
+git clone https://github.com/maitreya2954/snipvault.git
 cd backend
 ```
 

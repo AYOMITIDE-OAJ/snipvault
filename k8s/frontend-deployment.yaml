@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: <your-ecr-repo>/mini-pastebin-frontend:latest
+        image: <your-ecr-repo>/snipvault-frontend:latest
         ports:
         - containerPort: 80
 

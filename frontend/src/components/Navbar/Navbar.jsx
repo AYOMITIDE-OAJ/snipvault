@@ -6,7 +6,7 @@ import './Navbar.scss'
 function Navbar() {
   return (
     <nav>
-      <h2>Mini Pastebin</h2>
+      <h2>SnipVault</h2>
       <ul>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/create">Create Snippet</Link></li>

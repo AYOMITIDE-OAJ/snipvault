@@ -7,6 +7,6 @@ resource "aws_ecr_repository" "app" {
   }
 
   tags = {
-    Name = "mini-pastebin-ecr"
+    Name = "snipvault-ecr"
   }
 }

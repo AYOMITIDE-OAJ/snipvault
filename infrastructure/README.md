@@ -1,6 +1,6 @@
-# Mini Pastebin Cloud Infrastructure
+# SnipVault Cloud Infrastructure
 
-This repository contains the **Terraform** code to provision the cloud infrastructure for the **Mini Pastebin** application. The infrastructure is set up on **AWS** and includes:
+This repository contains the **Terraform** code to provision the cloud infrastructure for the **SnipVault** application. The infrastructure is set up on **AWS** and includes:
 
 - **EKS** (Elastic Kubernetes Service) for running the application containers.
 - **ECR** (Elastic Container Registry) for storing Docker images.
@@ -45,7 +45,7 @@ To deploy the infrastructure, you need the following:
 ## Folder Structure
 
 ```
-mini-pastebin-infrastructure/
+snipvault-infrastructure/
 ├── main.tf               # Main Terraform file
 ├── variables.tf          # Global variable definitions
 ├── outputs.tf            # Global output definitions
@@ -127,11 +127,11 @@ mini-pastebin-infrastructure/
    aws ecr get-login-password --region <aws-region> | docker login --username AWS --password-stdin <account-id>.dkr.ecr.<aws-region>.amazonaws.com
 
    # Build and tag your Docker image
-   docker build -t mini-pastebin .
-   docker tag mini-pastebin:latest <account-id>.dkr.ecr.<aws-region>.amazonaws.com/mini-pastebin-repo:latest
+  docker build -t snipvault .
+  docker tag snipvault:latest <account-id>.dkr.ecr.<aws-region>.amazonaws.com/snipvault-repo:latest
 
    # Push the image to ECR
-   docker push <account-id>.dkr.ecr.<aws-region>.amazonaws.com/mini-pastebin-repo:latest
+  docker push <account-id>.dkr.ecr.<aws-region>.amazonaws.com/snipvault-repo:latest
    ```
 
 ## Outputs

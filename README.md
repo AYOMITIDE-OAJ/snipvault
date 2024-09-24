@@ -1,7 +1,7 @@
 
-# Mini Pastebin Application
+# SnipVault: Scalable Snippet Manager with Automated Cloud Deployment and CI/CD using Terraform, AWS EKS and GitHub Actions 
 
-The **Mini Pastebin** is a full-stack web application that allows users to create, view, edit, and delete code snippets. This project consists of both a **frontend** (React) and a **backend** (Node.js/Express), with the entire infrastructure running on **AWS** using **EKS (Elastic Kubernetes Service)** and **AWS ECR** for Docker image storage.
+The **SnipVault** is a full-stack web application that allows users to create, view, edit, and delete code snippets. This project consists of both a **frontend** (React) and a **backend** (Node.js/Express), with the entire infrastructure running on **AWS** using **EKS (Elastic Kubernetes Service)** and **AWS ECR** for Docker image storage.
 
 This repository covers:
 - **Frontend**: A React app that interacts with the backend to manage code snippets.
@@ -45,7 +45,7 @@ PostgreSQL is used as the database, and the schema is managed using Sequelize OR
 
 ### 1. Infrastructure Setup with Terraform
 
-The cloud infrastructure for the application (VPC, EKS cluster, RDS, ECR) is managed by Terraform. You can find the Terraform configurations in the `mini-pastebin-infrastructure` repository.
+The cloud infrastructure for the application (VPC, EKS cluster, RDS, ECR) is managed by Terraform. You can find the Terraform configurations in the `snipvault-infrastructure` repository.
 
 1. **Initialize and apply Terraform configurations**:
 
@@ -60,11 +60,11 @@ The cloud infrastructure for the application (VPC, EKS cluster, RDS, ECR) is man
 
    ```bash
    # Backend
-   docker build -t <your-ecr-backend-repo-url> ./mini-pastebin-backend
+   docker build -t <your-ecr-backend-repo-url> ./snipvault-backend
    docker push <your-ecr-backend-repo-url>
 
    # Frontend
-   docker build -t <your-ecr-frontend-repo-url> ./mini-pastebin-frontend
+   docker build -t <your-ecr-frontend-repo-url> ./snipvault-frontend
    docker push <your-ecr-frontend-repo-url>
    ```
 
@@ -110,7 +110,7 @@ In your GitHub repository, configure the following **GitHub Secrets** for the CI
 ### Build and Push Docker Images:
 
 ```bash
-docker build -t <your-ecr-repo-url> ./mini-pastebin-backend
+docker build -t <your-ecr-repo-url> ./snipvault-backend
 docker push <your-ecr-repo-url>
 ```
 

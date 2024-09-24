@@ -1,6 +1,6 @@
-# Mini Pastebin Frontend
+# SnipVault Frontend
 
-This is the frontend for the Mini Pastebin project. It is a React-based web application that allows users to create, edit, view, and delete code snippets. The application communicates with the backend API to manage snippets, and the user interface is responsive and styled using SCSS.
+This is the frontend for the SnipVault project. It is a React-based web application that allows users to create, edit, view, and delete code snippets. The application communicates with the backend API to manage snippets, and the user interface is responsive and styled using SCSS.
 
 ## Features
 
@@ -30,7 +30,7 @@ Make sure you have the following installed on your machine:
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/maitreya/mini-pastebin.git
+git clone https://github.com/maitreya/snipvault.git
 cd frontend
 ```
 
@@ -67,13 +67,13 @@ The frontend is fully containerized using Docker. To run the frontend in a Docke
 1. **Build the Docker image**
 
 ```bash
-docker build -t mini-pastebin-frontend .
+docker build -t snipvault-frontend .
 ```
 
 2. **Run the Docker container**
 
 ```bash
-docker run -p 3000:80 mini-pastebin-frontend
+docker run -p 3000:80 snipvault-frontend
 ```
 
 Now, the frontend will be available at `http://localhost:3000`.
